@@ -46,8 +46,60 @@ nodejs执行写好的文件；
 
 #webStrom的设置
 
-推荐用WebStron开发JavaScript和nodejs；安装webstrom后可以简单的设置下字体；搜索font即可；
-
+推荐用WebStron开发JavaScript和nodejs；安装webstrom后可以简单的设置下字体；搜索font即可；个人喜欢字体Code pro这款字体；
+ 
 在视图--工具栏--扳手进入设置，然后再node.js and NPM里设置；
 
 这了会显示nodejs安装的路径；在这里点击configure按钮；可以下载nodejs的源代码包；这样以后带nodejs开发的过程中，就可以通过ctrl键和鼠标点击api随时查看源代码，来看工作的原理和流程；
+
+在webstorm里可以通过右键直接运行js的文件，可以通过debug来设置断点来调试；
+
+# node中的全局对象；
+
+- 全局对象是global；（浏览器中的顶级是window；window是global的代理）
+- `console.log(global);//可以通过console.log输出来；`
+
+# global中哪些有用的信息
+
+- 1、`__dirname`
+- `console.log(__dirname);`//可以输出文件所在的绝对目录；f:\github\Nodejs-is-a-gift-from-God\nodejs入门介绍
+- 2、`__filename`
+- `console.log(__dirname);`//可以输出文件所在的绝对目录；f:\github\Nodejs-is-a-gift-from-God\nodejs入门介绍
+
+- `console.log(__filename);`//可以输出文件所在绝对位置并且包裹自身的文件名；f:\github\Nodejs-is-a-gift-from-God\nodejs入门介绍\global.js
+
+# node中全局对象console
+
+console
+
+- console.log() 输出日志
+- console,dir() 输出详细日志
+- console.info() 输出信息
+- console.error() 输出错误
+- console.warn() 输出警告
+- console.time() 和timeEnd一起来获取某一段程序的执行时间
+- console.timeEnd() 
+
+webstorm在运行一个js文件后，如果再运行别的js文件，需要用右键来运行，如果点击下面的开始图标，会执行上一次执行的js文件，需要注意；
+
+    console.log("this is a log");
+    console.info("this is a info");
+    console.error("this is a error");//红色的提示；
+    console.warn("this is a warn");//红色的提示
+
+
+    console.time("test");//需要传一个字符串
+    for(var i=0;i<1000000;i++){}
+    console.timeEnd("test");//需要传一个和上次一样的字符串
+    /*输出3ms,表示运行了3ms*/
+
+# node中全局对象 process;
+
+	下面属于输出：    
+	//process.stdout  -->standard output 标准的输出
+    //process.stderr  -->standard error 标准的错误输出
+
+    /*推荐用console来输出，这两个方法不如console好用*/
+    process.stdout.write("this is process.stdout");
+    process.stderr.write("this is process.stderr");//红色的
+ 
