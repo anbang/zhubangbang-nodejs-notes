@@ -103,3 +103,39 @@ webstorm在运行一个js文件后，如果再运行别的js文件，需要用�
     process.stdout.write("this is process.stdout");
     process.stderr.write("this is process.stderr");//红色的
  
+
+    /*下面是键盘输入*/
+    process.stdin.setEncoding('utf-8');//纯文本输入只需要设置utf8即可，不需要设置gbk之类的；这里和网页不一样的；
+    /*第一种输入方式设置*/    
+    process.stdin.on("data",function(data){
+    	console.log(data);
+    /*运行后，没有反应，而是出于等待状态，如果再里面输入，会显示绿色的字；回车后会打印出来*/
+    });
+    
+    /*第二种输入方式*/
+    process.stdin.on("readable",function(){
+    var data=process.stdin.read();
+    console.log(data);
+    });
+
+**process.cwd:**和__dirname看着类似；
+
+    console.log(process.cwd());//f:\github\Nodejs-is-a-gift-from-God\nodejs入门介绍(这是webstorm运行的)
+当在命令行输入的时候就不一样了。
+
+- cwd是执行node命令时候，所在的目录，
+- __dirname是文件所在目录的绝对路径；
+
+cwd是 current working dir 当前工作环境路径的；
+
+**process.on:**这个是process监听事件（操作系统对node发出的）
+
+- 'exit'
+-  'SIGINT'  ===>signal interrupted 
+-  process.argv
+    `console.log(process.argv);`
+
+/*下面是打印出来的*/
+
+[ 'D:\\node\\node.exe',
+    'f:\\github\\Nodejs-is-a-gift-from-God\\nodejs入门介绍\\process_argv.js' ]
