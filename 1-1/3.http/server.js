@@ -19,6 +19,4 @@ http.createServer(function(req,res){
             res.end('404');
         }
     }
-
-
 }).listen(8080);//在8080监听
