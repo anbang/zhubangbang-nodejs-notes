@@ -4,6 +4,7 @@
  **/
 var chaobing,tail;
 var count = 0;
+//下面相当于开了一个服务员
 var waiter = function(){
     count++;
     if(count == 2){
@@ -13,14 +14,14 @@ var waiter = function(){
 chaobing = function(){
     setTimeout(function(){
         console.log('炒饼');
-        waiter();
+        waiter();//通知服务员
     },1000)
 };
 
 tail = function(){
     setTimeout(function(){
         console.log('鸡尾酒');
-        waiter();
+        waiter();//通知服务员
     },2000);
 };
 var eat = function(){
