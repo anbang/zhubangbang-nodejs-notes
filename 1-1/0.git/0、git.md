@@ -31,3 +31,9 @@
 <li>05&nbsp; git push origin master</li>
 <li>要输入github账号的时候，直接输入即可；</li>
 <li>（查看历史的cmd命令是输入history）</li></ul>
+
+git add. 几个的区别
+
+. 只包括修改和新建的   -u是修改和删除的   -A包括前面两个
+
+cd 是进入文件夹；cd..是返回上一层文件；
