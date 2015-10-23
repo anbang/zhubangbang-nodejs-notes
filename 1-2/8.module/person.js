@@ -1,11 +1,27 @@
-/*var count = 0;//局部活动变量
-
-exports.age = ++count;
-exports.sayHello = function(word){
-    console.log(word);
-}*/
-function Pet(name){
+var name = 'zfpx';
+console.log('person');
+exports.name = name;
+exports.say = function(name){
+    console.log(name);
+}
+function Person(name){
     this.name = name;
 }
-var array = [1,2,3];
-module.exports = array;
+Person.prototype.getName = function(){
+    return this.name;
+}
+
+module.exports = Person;
+var module = {};
+/*(function (exports, require, module, __filename, __dirname) {
+ exports = module.exports = {};
+ var name = 'zfpx';
+ console.log('person');
+ exports.name = name;
+ exports.say = function(name){
+ console.log(name);
+ }
+ return Person;
+ return module.exports;
+})*/
+
