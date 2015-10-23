@@ -1,109 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f0b930c-869e-46b5-8c93-77a6d17a656f" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other/8.module/查找文件的过程.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other/8.module/查找模块.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/7.event/1.events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/1.global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/9.buffer/1.index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/8.module/1.index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other/8.module/1.school.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-1/3.http/1.server-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/1.sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/1.var.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/7.event/2.emitter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/2.global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/8.module/2.require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/2.scopePre.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/2.write.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/3.console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/7.event/3.demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/3.open.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/3.scope.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/4.close.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/4.nexttick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/4.write.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/5.close2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/5.copy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/5.setImmediate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/6.rubbish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/6.util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/7.bind.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/7.v8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/9.callapply.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/9.buffer/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other/8.module/person.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/8.module/person.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/5.global/prototype.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/prototype.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/4.repl/repl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/6.jsadvance/script.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/10.file/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1-2/8.module/usePerson.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-1/3.http/1.server.js" afterPath="$PROJECT_DIR$/1-1/3.http/1.server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-1/3.http/2.server.js" afterPath="$PROJECT_DIR$/1-1/3.http/2.server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-1/3.http/index.html" afterPath="$PROJECT_DIR$/1-1/3.http/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-1/3.http/index2.html" afterPath="$PROJECT_DIR$/1-1/3.http/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-2/8.module/person.js" afterPath="$PROJECT_DIR$/1-2/8.module/person.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\1.intro\1.git.md" afterPath="$PROJECT_DIR$/other/1.intro/1.git.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\1.intro\2.fullstack.md" afterPath="$PROJECT_DIR$/other/1.intro/2.fullstack.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\1.binary.js" afterPath="$PROJECT_DIR$/other/10.buffer/1.binary.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\2.readfile.js" afterPath="$PROJECT_DIR$/other/10.buffer/2.readfile.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\3.transform.js" afterPath="$PROJECT_DIR$/other/10.buffer/3.transform.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\4.buffer.js" afterPath="$PROJECT_DIR$/other/10.buffer/4.buffer.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\index.md" afterPath="$PROJECT_DIR$/other/10.buffer/index.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\10.buffer\msg2.txt" afterPath="$PROJECT_DIR$/other/10.buffer/msg2.txt" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\ajax.pdf" afterPath="$PROJECT_DIR$/other/3.http/ajax.pdf" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\http.md" afterPath="$PROJECT_DIR$/other/3.http/http.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\images\request.jpg" afterPath="$PROJECT_DIR$/other/3.http/images/request.jpg" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\images\url.jpg" afterPath="$PROJECT_DIR$/other/3.http/images/url.jpg" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\index.html" afterPath="$PROJECT_DIR$/other/3.http/index.html" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\js.js" afterPath="$PROJECT_DIR$/other/3.http/js.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\logo.png" afterPath="$PROJECT_DIR$/other/3.http/logo.png" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\server.js" afterPath="$PROJECT_DIR$/other/3.http/server.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\server0.js" afterPath="$PROJECT_DIR$/other/3.http/server0.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\3.http\style.css" afterPath="$PROJECT_DIR$/other/3.http/style.css" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\1.var.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/1.var.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\2.scope1.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/2.scope1.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\3.scope2.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/3.scope2.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\4.closure.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/4.closure.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\5.context.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/5.context.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\6.v8.js" afterPath="$PROJECT_DIR$/other/4.jsadvance/6.v8.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\4.jsadvance\index.md" afterPath="$PROJECT_DIR$/other/4.jsadvance/index.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\5.repl\readme.md" afterPath="$PROJECT_DIR$/other/5.repl/readme.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\1.global.js" afterPath="$PROJECT_DIR$/other/6.global/1.global.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\2.console.js" afterPath="$PROJECT_DIR$/other/6.global/2.console.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\3.process.js" afterPath="$PROJECT_DIR$/other/6.global/3.process.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\4.process.js" afterPath="$PROJECT_DIR$/other/6.global/4.process.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\5.nexttick.js" afterPath="$PROJECT_DIR$/other/6.global/5.nexttick.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\6.utils.js" afterPath="$PROJECT_DIR$/other/6.global/6.utils.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\6.global\index.md" afterPath="$PROJECT_DIR$/other/6.global/index.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\1.bind.js" afterPath="$PROJECT_DIR$/other/7.event/1.bind.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\2.prototype.js" afterPath="$PROJECT_DIR$/other/7.event/2.prototype.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\3.events.js" afterPath="$PROJECT_DIR$/other/7.event/3.events.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\4.EventEmitter.js" afterPath="$PROJECT_DIR$/other/7.event/4.EventEmitter.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\5.done.js" afterPath="$PROJECT_DIR$/other/7.event/5.done.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\6.done2.js" afterPath="$PROJECT_DIR$/other/7.event/6.done2.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\7.done3.js" afterPath="$PROJECT_DIR$/other/7.event/7.done3.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\age.txt" afterPath="$PROJECT_DIR$/other/7.event/age.txt" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\index.md" afterPath="$PROJECT_DIR$/other/7.event/index.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\name.txt" afterPath="$PROJECT_DIR$/other/7.event/name.txt" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\7.event\prototype.jpg" afterPath="$PROJECT_DIR$/other/7.event/prototype.jpg" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\1.school.js" afterPath="$PROJECT_DIR$/1-2/10.file/write.txt" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\a.js" afterPath="$PROJECT_DIR$/other/8.module/a.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\b.js" afterPath="$PROJECT_DIR$/other/8.module/b.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\c.js" afterPath="$PROJECT_DIR$/other/8.module/c.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\c.json" afterPath="$PROJECT_DIR$/other/8.module/c.json" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\d.jso" afterPath="$PROJECT_DIR$/other/8.module/d.jso" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\index.md" afterPath="$PROJECT_DIR$/other/8.module/index.md" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\require.js" afterPath="$PROJECT_DIR$/other/8.module/require.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\8.module\userPerson.js" afterPath="$PROJECT_DIR$/other/8.module/userPerson.js" />
-      <change type="MOVED" beforePath="E:\github\Nodejs-is-a-gift-from-God\1-2\9.path\1.path.js" afterPath="$PROJECT_DIR$/other/9.path/1.path.js" />
-    </list>
+    <list default="true" id="1f0b930c-869e-46b5-8c93-77a6d17a656f" name="默认的" comment="" />
     <ignored path="Nodejs-is-a-gift-from-God.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,7 +37,7 @@
       <file leaf-file-name="2.global.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1-2/5.global/2.global.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="630">
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="21" max-vertical-offset="651">
               <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
@@ -241,38 +139,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1-2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1-2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5.global" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,7 +302,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="706" y="14" width="727" height="820" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35093167" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -445,7 +311,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2055961" sideWeight="0.49905482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20487106" sideWeight="0.49905482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58433735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30472103" sideWeight="0.50094515" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
