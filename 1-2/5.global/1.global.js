@@ -7,9 +7,7 @@ var a = 1;
 global.a = 1;
 //console.log(global);//window
 
-/*
 b = 3;
-*/
 /**
  * process 进程对象
  *   argv 命令行参数
@@ -24,12 +22,13 @@ b = 3;
  *  setImmediate: [Function],
  *  clearImmediate: [Function],
  *  console: [Getter],
- *//*
+ */
 
 //读取命令行参数
 process.argv.forEach(function(arg){
     console.log(arg);
 });
+
 console.log(process.pid);
 var count = 0;
 setInterval(function(){
@@ -39,9 +38,8 @@ setInterval(function(){
     }
 },1000)
 
+/*
 process.on('SIGTERM',function(){
     process.exit();
 })
-
-
 */

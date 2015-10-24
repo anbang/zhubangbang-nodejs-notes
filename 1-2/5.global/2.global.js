@@ -1,10 +1,8 @@
 var g = require('./1.global');// 类似于中文的script src=
 console.log(a);
-/*
 console.log(b);
 console.log(__filename);
 console.log(__dirname);
-*/
 /**
  * exports 导出对象
  * require 函数

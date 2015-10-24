@@ -8,20 +8,25 @@ function Parent(){
 }
 Parent.prototype.showName = function(){
     console.log(this.name);
-}
+};
 
 function Child(){
-    Parent.call(this);
     this.name = 'child';
+    Parent.call(this);//执行Parent，并把child的this覆盖parent的this;此时的this.name是father；
 }
+util.inherits(Child,Parent);
+//inherits的原理
 //ctor.prototype = Object.create(superCtor.prototype)
-//util.inherits(Child,Parent);
+
+
 Child.prototype = new Parent();
 var child = new Child();
 child.say();
 child.showName();
 
 
+console.log(util.inspect(child));
+console.log(util.inspect(child,true,1,true));
 console.log(util.inspect(child,true,5,true));
 
 /*
