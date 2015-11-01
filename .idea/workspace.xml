@@ -24,40 +24,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="3.命令行的常用命令.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-1/0.git/3.命令行的常用命令.md">
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-1/2.node/index.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.354838" vertical-offset="0" max-vertical-offset="464">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.7419353" vertical-offset="0" max-vertical-offset="368">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0.git.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1-1/0.git/0.git.md">
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="2.async.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1-1/2.node/2.async.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="192">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.git实用方法总结.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-1/0.git/1.git实用方法总结.md">
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+      <file leaf-file-name="3.async.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1-1/2.node/3.async.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35555556" vertical-offset="0" max-vertical-offset="576">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -74,7 +68,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/1-1/0、git.html" />
         <option value="$PROJECT_DIR$/1-1/0、git.md" />
-        <option value="$PROJECT_DIR$/1-1/1.start/全端工程师.md" />
         <option value="$PROJECT_DIR$/1-1/2.node/index.html" />
         <option value="$PROJECT_DIR$/1-1/2.node/1.callback.js" />
         <option value="$PROJECT_DIR$/1-1/2.node/index.md" />
@@ -109,6 +102,8 @@
         <option value="$PROJECT_DIR$/命令行的常用命令.md" />
         <option value="$PROJECT_DIR$/1-1/0.git/命令行的常用命令.md" />
         <option value="$PROJECT_DIR$/1-1/0.git/3.命令行的常用命令.md" />
+        <option value="$PROJECT_DIR$/1-1/0.git/0.git.md" />
+        <option value="$PROJECT_DIR$/1-1/1.start/全端工程师.md" />
       </list>
     </option>
   </component>
@@ -116,8 +111,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="643" />
-    <option name="width" value="790" />
+    <option name="x" value="528" />
+    <option name="width" value="920" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -188,20 +183,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1-4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Nodejs-is-a-gift-from-God" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="1-1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -220,7 +201,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="0.git" />
+              <option name="myItemId" value="2.node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,17 +234,7 @@
       <recent name="E:\github\Nodejs-is-a-gift-from-God\1-2" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.3.server.js">
-    <configuration default="false" name="6.util.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node/anzhuang/node" path-to-js-file="6.util.js" working-dir="$PROJECT_DIR$/1-2/5.global">
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <method />
-    </configuration>
-    <configuration default="false" name="1.var.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node/anzhuang/node" path-to-js-file="1.var.js" working-dir="$PROJECT_DIR$/1-2/6.jsadvance">
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.2.async.js">
     <configuration default="false" name="2.scopePre.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node/anzhuang/node" path-to-js-file="2.scopePre.js" working-dir="$PROJECT_DIR$/1-2/6.jsadvance">
       <RunnerSettings RunnerId="Basic" />
       <ConfigurationWrapper RunnerId="Basic" />
@@ -275,6 +246,16 @@
       <method />
     </configuration>
     <configuration default="false" name="3.server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node/anzhuang/node" path-to-js-file="3.server.js" working-dir="$PROJECT_DIR$/1-4/13.http">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="1.callback.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/node/node" path-to-js-file="1.callback.js" working-dir="$PROJECT_DIR$/1-1/2.node">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="2.async.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/node/node" path-to-js-file="2.async.js" working-dir="$PROJECT_DIR$/1-1/2.node">
       <RunnerSettings RunnerId="Basic" />
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
@@ -317,19 +298,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.6.util.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.1.var.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.2.scopePre.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.3.scope.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.3.server.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.2.scopePre.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.3.scope.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.3.server.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.1.callback.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.2.async.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.3.server.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.3.scope.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.2.scopePre.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.1.var.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.6.util.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.2.async.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.1.callback.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.3.server.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.3.scope.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.2.scopePre.js" />
       </list>
     </recent_temporary>
   </component>
@@ -410,19 +391,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="643" y="0" width="790" height="867" extended-state="0" />
+    <frame x="528" y="0" width="920" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19662921" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19632769" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23005319" sideWeight="0.78672314" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22675736" sideWeight="0.78558874" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34822804" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23005319" sideWeight="0.21327683" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22675736" sideWeight="0.21441124" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -527,17 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.516129" vertical-offset="0" max-vertical-offset="112">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.76" vertical-offset="0" max-vertical-offset="240">
@@ -551,8 +521,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.612903" vertical-offset="0" max-vertical-offset="368">
+        <state vertical-scroll-proportion="0.17283951" vertical-offset="0" max-vertical-offset="648">
           <caret line="7" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29953197" vertical-offset="0" max-vertical-offset="641">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -568,13 +546,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-1/0.git/3.命令行的常用命令.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838" vertical-offset="0" max-vertical-offset="464">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.024691358" vertical-offset="0" max-vertical-offset="648">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -584,8 +562,76 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="752">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/0.git/3.命令行的常用命令.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.290322" vertical-offset="0" max-vertical-offset="448">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/1.start/3.为什么要学习node.md">
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/1.start/全端工程师.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.193548" vertical-offset="0" max-vertical-offset="320">
+          <caret line="12" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/2.node/1.callback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35555556" vertical-offset="0" max-vertical-offset="540">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/2.node/2.async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="192">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/2.node/index.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7419353" vertical-offset="0" max-vertical-offset="368">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-1/2.node/3.async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35555556" vertical-offset="0" max-vertical-offset="576">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding />
         </state>
       </provider>
