@@ -3,14 +3,12 @@ var http = require('http');
 var fs=require('fs');
 var mime=require('mime');
 http.createServer(function(request,response){
-/*    console.log(request.url);//获取路径
-    console.log(request.method);//获取请求的方法名
-    console.log(request.headers);//获取请求头*/
+    /*index.html?name=broszhu*/
     var urls=request.url.split("?");
     var pathmame=urls[0];
     var query=urls[1];
-    var name=query?query.split('=')[1]:"flag";
-    getFile(request.url.slice(1),response);
+    var name=query?query.split('=')[1]:"flag";//这里不能直接用name=query.split('=')[1]；否则会报错的，因为请求CSS的时候，这个里是undefined；
+    getFile(pathmame.slice(1),response);
 
     function getFile(filename,response){
         //只有指定了编码utf-8,data才会是一个字符串；
@@ -23,7 +21,7 @@ http.createServer(function(request,response){
                         'Content-Length':data.length,
                         'Content-Type':mime.lookup(filename)+';charset=UTF-8'
                     });
-                data=data.replace('<%=name%>',name);
+                data=data.replace('<%=name%>',name);//这里可以显示信息的；
                 response.write(data);
                 response.end();
             }

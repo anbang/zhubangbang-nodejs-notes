@@ -4,7 +4,9 @@ var fs=require('fs');
 http.createServer(function(request,response){
 /*    console.log(request.url);//获取路径
     console.log(request.method);//获取请求的方法名
-    console.log(request.headers);//获取请求头*/
+    console.log(request.headers);//获取请求头
+    浏览器只能发起get请求，发表不了post请求；
+    */
     getFile(request.url.slice(1),response);
 
     function getFile(filename,response){
@@ -37,7 +39,7 @@ http.createServer(function(request,response){
 * 1、导入包；
 * 2、创建断口监听；http.createServer(function(request,response){}.listen;
 * 3、开一个函数处理请求和想要；getFile(request.url.slice(1),response);
-* 4、创建一个读取文件；fs.readFile(filename,function(err,data){}
+* 4、创建一个读取文件；fs.readFile(filename,function(err,data){};
 * */
 
 
