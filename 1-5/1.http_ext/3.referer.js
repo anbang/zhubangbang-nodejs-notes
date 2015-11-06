@@ -7,6 +7,7 @@ var whiteList = ['a.zfpx.cn'];//定义一个白名单列表
 app.set('view engine','ejs');//模板引擎
 app.set('views',__dirname); //设置模板的存放位置
 app.use('/img',function(req,res,next){
+    //referer有的浏览器拼错了，写成referrer了，所以要写两套；
   var refer = req.headers.referer || req.headers.referrer;
     //Referer:http://localhost:8080/
     //Referer:http://a.zfpx.cn:8080/
@@ -28,6 +29,9 @@ function getHost(url){
     var host = core.url.parse(url).host;
     return host.split(':')[0];
 }
+
+
+
 app.use('/img',express.static(core.path.join(__dirname,'img'))) //提供图片服务
 app.get('/',function(req,res){
     res.render('img');

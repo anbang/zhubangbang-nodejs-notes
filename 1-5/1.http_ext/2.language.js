@@ -26,7 +26,9 @@ function getLanguage(req,res){
   }
   return   serverLan[0];
    function parseLanguage(str){
-      // ['en','zh-CN;q=0.8','zh;q=0.6']
+       //map返回一个数组；
+      //原来是这样的 ['en','zh-CN;q=0.8','zh;q=0.6']
+       //转换成由对象组成的数组的 [{l:'en',q:1},{l:'zh-cn',q:0.8},{l:'zh',q:0.6}]
        return str.toLowerCase().split(',').map(function(item){
           var s = item.split(';');
           var l = s[0];

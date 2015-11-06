@@ -6,7 +6,9 @@ core.http.createServer(function (req, res) {
     /*获取请求的相对路径*/
     /*假如访问的是/index.html;用slice(1)就可以把前面的[/]去掉，直接留下index.html*/
     var filename = req.url.slice(1);
-    matchHeadler(filename, req, res);
+    //matchHeadler(filename, req, res);
+    //eTagHandler(filename, req, res);
+    expireHandler(filename, req, res);
 }).listen(8080);
 
 /*
@@ -64,4 +66,16 @@ function eTagHandler(filename,req,res){
 // update 加密的内容  digest输出摘要 base64编码
 function getHash(content){
     return core.crypto.createHash('sha1').update(content).digest('hex');
+}
+
+//expires:Wed, 27 Apr 2016 09:15:15 GMT 过期时间
+//cache-control:max-age=15552000 缓存控制 max-age最大存活时间
+function expireHandler(filename,req,res){
+    core.fs.readFile(filename,function(err,content){
+        var expires = new Date(new Date().getTime()+30*1000);//设置绝对时间缓存时间30秒
+        res.setHeader('Expires',expires.toUTCString());//缓存过期 时间
+        res.setHeader('Cache-Control','max-age=30');//设置相对时间缓存时间30秒
+        res.writeHead(200);
+        res.end(content);
+    })
 }
