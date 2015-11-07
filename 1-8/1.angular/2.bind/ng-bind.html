@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--我们的控制器-->
+<div ng-controller="appCtrl">
+    <span>{{name}}</span>
+    <input type="button" ng-click="say()" value="click me"/>
+    <ul>
+        <li ng-repeat="key in books">{{key['name']}}</li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../angular/angular.js"></script>
+<script>
+    var app=angular.module('appModule',[]);
+    app.controller('appCtrl',function($rootScope,$scope){
+        $scope.name="name";
+/*        setTimeout(function(){
+            $scope.say="sayChange";
+            console.log($scope.say);//控制台打印出来了，但是也没上没有改。
+        },2000);*/
+/*        setTimeout(function(){
+            $scope.$apply(function(){//$apple是强制刷新一下页面；
+                $scope.name="namechange";//此时打印出来了；
+                $scope.say= function () {
+                    console.log($scope.name+"点");
+                }
+                $scope.books=[{name:'nodejs'},{name:'javascript'}]
+            });
+        },2000);*/
+
+        $scope.say= function () {
+            console.log($scope.name+"点");
+        }
+        $scope.books=[{name:'nodejs'},{name:'javascript'}]
+
+    });
+
+</script>
