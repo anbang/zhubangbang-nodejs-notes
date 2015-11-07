@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--我们的控制器-->
+<div ng-controller="appCtrl">
+    {{name}}
+</div>
+
+<div ng-controller="homeCtrl">
+    {{name}}
+    {{age}}
+    <div ng-controller="appCtrl">
+        {{name}}
+        {{age}}
+    </div>
+</div>
+</body>
+</html>
+<script src="angular/angular.js"></script>
+<script>
+    //这是我们的模块
+    var app=angular.module('appModule',[]);//新生成的模块；这里app就是MVC的M（model）
+    //这是控制器的定义,controller是和上面ng-controller对应的；
+    app.controller('appCtrl',function($rootScope,$scope){
+        //$scope就是我们的模型了
+        console.log($scope);//{}
+        $scope.name="broszhu";//给模型定义名称属性；
+        $rootScope.root='root';//根作用域
+
+    });
+    app.controller('homeCtrl',function($scope){
+        $scope.name="zhuzhu";
+        $scope.age="26";
+
+    })
+</script>
