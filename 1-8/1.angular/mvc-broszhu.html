@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular/angular.js"></script>
+</head>
+<body>
+<div ng-controller="appCtrl">
+     {{name}}
+    <input type="text" ng-model="name"/>
+    <!--ng-model是模型；与所属的控制器绑定在一起；-->
+    <!--这个时候{{name}}===$scope.name=ng-model==="name"，三个值是一样的；通过$scope.name对t他们进行双向绑定-->
+    <!--这个时候ng-model会影响$scope；从而影响到{{name}}；也就是说可以通过控制ng-model来控制他们；-->
+</div>
+</body>
+<script>
+    var app = angular.module("appModule", []);
+    app.controller('appCtrl', function ($scope) {
+        $scope.name = "broszhu";
+    });
+</script>
+</html>

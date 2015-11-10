@@ -29,14 +29,16 @@ MVVM 模型视图视图模型，
 
 ##模型(参考mvc.html)
 - 绑定在$scope
-- scope是由控制器派生出来的；
-- $scope 默认是一个空对象，你可以往里面赋值；
-- $scope 提供了一些方法；$watch $apply
-- $scope 是上下文环境；
-- $scope 是一个树形结构，与DOM标签平行；
+- 当创建控制器时候，会自动创建一个对应$scope,scope是由控制器派生出来的；
+- $scope 默认是一个JavaScript空对象，你可以往里面赋值；
+- $scope 是一个树形结构,因为是挂在标签上的，所以与DOM标签平行；
 - 每一个angular应用都有一个根作用域$rootScope;
 - $scope 可以传播事件，可以向上也可以向下；
 - $scope是实现双向数据绑定的基础，现在自己的作用域里找，找不到到根作用域写；
+
+- $scope 提供了一些方法；$watch $apply
+- $scope 是上下文环境；
+
 
 ## 视图
 - 通过HTML标签实现；{{var}}
