@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul>
+    <!--加#是锚点，不会引起页面跳转；如果不加会跳转的-->
+    <li><a href="#/home">首页</a></li>
+    <li><a href="#/list">student</a></li>
+</ul>
+<!--下面是单页应用中，中间需要变动的;指令可以理解为某个标签的属性；拥有ng-view指令的就是需要变化的-->
+<!--点击home和list会把内容放在拥有ng-view的内容里;ng-view指定了需要刷新的内容-->
+<div ng-view=""></div>
+</body>
+</html>
+<script src="../angular.js"></script>
+<script src="angular-route.js"></script>
+<script>
+    //app-config--run
+    var app=angular.module('appModule',['ngRoute']);//依赖angular-route.js的，模块是ngRoute，骆驼命名法；
+    //config里面可以进行配置,$routeProvider是从angular-route里声明的；通过when方法来设置不同的访问，指定渲染不同的模板templateUrl；
+    app.config(function($routeProvider){
+        $routeProvider.when('/home',{
+            templateUrl:'./tmpl/home.html',
+            controller:'homeCtrl'
+        }).when('/list',{
+            templateUrl:'./tmpl/list.html',
+            controller:'listCtrl'
+        })
+    });
+    //不同的模板会调用不同的控制器来渲染自身文件；拿控制器里$scope上的内容去渲染设置的模板（templateUrl）
+    app.controller('homeCtrl',function($scope){
+        $scope.name="主页先生";//这里的name是home.html里的表达式
+    });
+    app.controller('listCtrl',function($scope){
+        $scope.name="分页小姐"
+    });
+</script>
