@@ -8,77 +8,80 @@
 <body>
 <div class="container">
     <ul class="nav nav-tabs">
-        <li ng-class="{active:'home'==current}"><a ui-sref="home" href="#">首页</a></li>
-        <li ng-class="{active:'user'==current}"><a ui-sref="user" href="#">用户管理</a></li>
-        <li ng-class="{active:'profile'==current}"><a ui-sref="profile" href="#">个人信息</a></li>
+        <li ng-class="{active:current=='home'}"><a ui-sref="home" href="#">首页</a></li>
+        <li ng-class="{active:current=='user'}"><a ui-sref="user" href="#">用户管理</a></li>
+        <li ng-class="{active:current=='profile'}"><a ui-sref="profile" href="#">个人信息</a></li>
     </ul>
     <div ui-view></div>
 </div>
 </body>
-<script src="../angular.js"></script>
+<script src="../3.double/angular.js"></script>
 <script src="angular-ui-router.js"></script>
 <script>
-    var app=angular.module("appModule",["ui.router"]);
-    app.run(function($rootScope){
-        $rootScope.$on('$stateChangeStart',function(event,toState,toParams,formState,formParams){
+    var app = angular.module('appModule',['ui.router']);
+    app.config(function($stateProvider){
+        $stateProvider.state('home',{
+            url:'/home',
+            templateUrl:'./home.html',
+            controller:'homeCtrl'
+        }).state('user',{
+            url:'/user',//只写一个路径
+            templateUrl:'./user.html',
+            controller:'userCtrl'
+        }).state('profile',{
+            url:'/profile',
+            views:{
+                '':{//''相当于父级的意思
+                    templateUrl:'./profile.html'
+                },
+                'name@profile':{
+                    templateUrl:'./name.html'//模板的url
+                },
+                'age@profile':{
+                    template:'<h3>myAge:18岁了</h3>'//普通 的HTML片断
+                }
+            }
+        }).state('user.list',{
+            url:'/list',//二级路由：用户列表
+            templateUrl:'./list.html',
+            controller:'listCtrl'
+        }).state('user.add',{
+            url:'/add',
+            templateUrl:'./add.html',
+            controller:'addCtrl',
+            needLogin:true
+        }).state('user.view',{
+            url:'/view/:id',//'/view/:id' 这里传了:id；
+            templateUrl:'./view.html',
+            controller:'viewCtrl'
+        }).state('login',{
+            url:'/login',
+            templateUrl:'./login.html'
+        })
+    });
+    app.run(function($rootScope,$state){
+        $rootScope.$on('$stateChangeStart',function(event,toState,toParams,fromState,fromParams){
             if(toState.needLogin&&!$rootScope.username){
-                alert("您还没有登录哦!");
+                alert('你还没登陆');
+                $state.go('login');
                 event.preventDefault();//阻止事件的默认跳转
                 return;
             }
             $rootScope.current = toState.name;
         });
     });
-    app.config(function($stateProvider){
-        $stateProvider.state('home',{
-            url:'/home',//定义路径,首页
-            templateUrl:'./home.html',
-            controller:'homeCtrl'
-        }).state('user',{
-            url:'/user',//用户管理
-            templateUrl:'./user.html',
-            controller:'userCtrl'
-        }).state('profile',{
-            url:'/profile',//个人信息
-            templateUrl:'./profile.html',
-            controller:'profileCtrl'
-        }).state('user.list',{
-            url:'/list',//用户列表
-            templateUrl:'./list.html',
-            controller:'listCtrl'
-        }).state('user.add',{
-            url:'/add',//添加用户
-            templateUrl:'./add.html',
-            controller:'addCtrl',
-            needLogin:true
-        }).state('user.view',{
-            url:'/view/:id',//查看用户信息
-            templateUrl:'./view.html',
-            controller:'viewCtrl'
-        }).state('login',{
-            url:'/login',//登录
-            template:'请登陆'
-        })
-    });
-    app.constructor("homeCtrl",function($scope){
-
-    });
-    app.constructor("userCtrl",function($scope){
-
-    });
-    app.constructor("profileCtrl",function($scope){
-
-    });
-    app.constructor("listCtrl",function($scope){
-        $scope.title = "list";
-    });
-    app.constructor("addCtrl",function($scope){
+    app.controller('homeCtrl',function($scope){});
+    app.controller('userCtrl',function($scope){});
+    app.controller('profileCtrl',function($scope){});
+    app.controller('addCtrl',function($scope){
         $scope.title = "add";
     });
-    app.constructor("viewCtrl",function($scope,$stateParams){
+    app.controller('listCtrl',function($scope){
+        $scope.title = "list";
+    });
+    app.controller('viewCtrl',function($scope,$stateParams){
         $scope.title = "view";
         $scope.id = $stateParams.id;
     });
-
 </script>
 </html>

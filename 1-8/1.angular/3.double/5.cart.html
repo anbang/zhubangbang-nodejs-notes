@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css"/>
+</head>
+<body>
+<div class="container" ng-controller="CartController">
+    <table class="table">
+        <tr>
+            <td>名称</td>
+            <td>价格</td>
+            <td>数量</td>
+            <td>金额</td>
+            <td>删除</td>
+        </tr>
+        <tr ng-repeat="item in items">
+            <td> <span ng-bind="item.name"></span></td>
+            <td> <span ng-bind="item.price"></span></td>
+            <td><input type="text" ng-model="item.quantity"/></td>
+            <td> <span ng-bind="item.price*item.quantity"></span></td>
+            <td><button ng-click="remove($index)" class="btn-danger">删除</button></td>
+        </tr>
+        <tr>
+            <!--currency是过滤器-->
+            <td>总金额<span ng-bind="total()|currency"></span></td>
+            <td>折扣金额<span ng-bind="discount()|currency"></span></td>
+            <td>最终金额<span ng-bind="(total()-discount())|currency"></span></td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="angular.js"></script>
+<script>
+    var app = angular.module('appModule',[]);
+    app.controller('CartController',function($scope){
+        $scope.items = [
+            {name:'iphone5',quantity:1,price:10},
+            {name:'iphone6',quantity:1,price:20},
+            {name:'iphone7',quantity:1,price:30},
+        ];
+        $scope.remove = function(index){
+            $scope.items.splice(index,1);
+        };
+        $scope.total = function(){
+            var total = 0;
+            $scope.items.forEach(function(item){
+                total+=item.price*item.quantity;
+            });
+            return total;
+        };
+        $scope.discount = function(){
+            var total = $scope.total();
+            return total>=100?total*0.1:0;//当金额满100元.折扣下来，减多少；
+        }
+    });
+</script>
+</html>

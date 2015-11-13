@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css"/>
+</head>
+<body ng-controller="appCtrl">
+    <div class="form-group">
+        <label for="username"  class="control-label">用户名</label>
+        <input type="text" id="username" ng-model="user.username" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="password"  class="control-label">密码</label>
+        <input type="text" id="username" ng-model="user.password" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="get()">获取</button>
+        <button class="btn btn-default" ng-click="set()">设置</button>
+        <button class="btn btn-danger" ng-click="reset()">重置</button>
+        <button class="btn btn-danger" ng-click="save()">保存</button>
+    </div>
+</body>
+<script src="angular.js"></script>
+<script>
+    var app=angular.module("appModule",[]);
+    app.controller("appCtrl",function($scope,$http){//这里需要注入$http
+        $scope.user={};
+        $scope.get=function(){
+            alert(JSON.stringify($scope.user))
+        };
+        $scope.set=function(){
+            $scope.user={username:"broszhu",password:"123456"};
+        };
+        $scope.reset=function(){
+            $scope.user={};
+        };
+        $scope.save=function(){
+            //ajax来保存$scope.user
+            $http({
+                url:'/user/add',
+                method:'POST',
+                data:$scope.user
+            }).success(function(data){
+                console.log($scope.user);
+                alert(data);
+            }).error(function(err){
+                alert('err',err);
+                console.log(err);
+            })
+        };
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="appCtrl">
+<!--<span ng-bind="name"></span>-->
+<span ng-click="talk(name)">点击我</span>
+</body>
+<script src="angular.js"></script>
+<script>
+    var app=angular.module("appModule",[]);
+    app.controller("appCtrl",function($scope){
+        $scope.name="broszhu";
+        $scope.talk=function(name){
+            alert("hello "+name)
+        };
+    })
+</script>
+</html>

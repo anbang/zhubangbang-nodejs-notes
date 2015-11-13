@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css"/>
+</head>
+<body>
+<div class="form-group" ng-class="{'has-error':username.length>6}">
+    <label for="username"  class="control-label">用户名</label>
+    <input type="text" id="username" ng-model="username" class="form-control"/>
+</div>
+<div ng-show="username.length<=6">用户名合法【√】</div>
+<div ng-hide="username.length<=6">用户名非法【×】</div>
+<script src="angular.js"></script>
+</body>
+</html>
