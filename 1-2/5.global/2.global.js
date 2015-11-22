@@ -1,6 +1,12 @@
 var g = require('./1.global');// 类似于中文的script src=
 console.log(a);
 console.log(b);
+
+/*
+* __filename 当前文件的绝对路径,带文件名的
+* __dirname 当前文件的相对路径
+* 他们两个都是方法的参数，不是全局对象；
+* */
 console.log(__filename);
 console.log(__dirname);
 /**

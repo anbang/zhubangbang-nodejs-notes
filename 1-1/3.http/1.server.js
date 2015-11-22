@@ -16,7 +16,9 @@ http.createServer(function(request,response){
             }else{
                 response.writeHead(200,
                     {
+/*
                         'Content-Length':data.length,
+*/
                         'Content-Type':getContentType(filename)+';charset="UTF-8"'
                     });
                 response.write(data);
