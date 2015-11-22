@@ -53,9 +53,13 @@ console.log(__dirname);
  * memoryUsage:监控内存的时候用的；
  * exit ;退出程序
  *
- *  nextTick: [Function: nextTick],
- *  setImmediate: [Function],
+ *  nextTick: [Function: nextTick],在事件循环的下一个循环中调用callback函数；比setTimeout效率高，是在所有同步方法执行完成之后执行此回调；
+ *  nextTick队列会在完全执行完才调用IO操作；因此提柜的nextTick就像一个while（true）的死循环，阻止任何的IO；
+ *
+ *  setImmediate: [Function],setImmediate是在下一个周期调用，但是nexttick级别高；
  *  clearImmediate: [Function],
+ *  同步代码>nextTick>setImmediate>定时器之类的异步代码
+ *
  *  console: [Getter],
  */
 

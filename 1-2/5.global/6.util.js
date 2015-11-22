@@ -14,12 +14,12 @@ function Child(){
     this.name = 'child';
     Parent.call(this);//执行Parent，并把child的this覆盖parent的this;此时的this.name是father；
 }
-util.inherits(Child,Parent);
+util.inherits(Child,Parent);//实现了继承了
 //inherits的原理
 //ctor.prototype = Object.create(superCtor.prototype)
 
 
-Child.prototype = new Parent();
+//Child.prototype = new Parent();
 var child = new Child();
 child.say();
 child.showName();

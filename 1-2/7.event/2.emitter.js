@@ -12,6 +12,7 @@ util.inherits(Person,EventEmitter);
 
 var me = new Person();
 
+//监听2中方法。1个是on，一个是addListener
 me.on('老板有事找我',function(){
     console.log('问问啥事');
 });
@@ -19,8 +20,15 @@ me.on('老板有事找我',function(){
 me.addListener('微信弹消息了',function(){
     console.log('设置为免打扰');
 });
+//设置最大监听数2;
+me.setMaxListeners(2);
+
+//发射方法用emit；
 me.emit('老板有事找我');
 me.emit('微信弹消息了');
+//removeListener移除监听事件；
+
+
 var eatDinner = function(){
     console.log('吃晚餐');
 }
