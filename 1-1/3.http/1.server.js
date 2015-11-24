@@ -44,7 +44,6 @@ http.createServer(function(request,response){
 * 4、创建一个读取文件；fs.readFile(filename,function(err,data){};
 * */
 
-
 /*请求
 * 1、基于http协议、get/post的请求方法名、url请求路径；
 * 2、请求首部；
