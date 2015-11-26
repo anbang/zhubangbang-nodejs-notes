@@ -15,7 +15,6 @@ b = 3;
 //在模块内部声明的变量属性，不属于全面变量，var声明的属于模块本身；不属于全局；
 
 var a = 1;
-
 console.log(global===global.global);//true,global上会有一个global；
 
 
