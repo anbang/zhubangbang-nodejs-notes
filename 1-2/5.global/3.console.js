@@ -21,7 +21,6 @@ console.log(1==1);
 console.time('while循环统计时间');
 var i=0;
 while(i++<50000000){
-
 }
 console.timeEnd('while循环统计时间');
 
