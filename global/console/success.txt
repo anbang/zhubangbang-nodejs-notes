@@ -1,0 +1,35 @@
+Console {
+  log: [Function: bound consoleCall],
+  info: [Function: bound consoleCall],
+  warn: [Function: bound consoleCall],
+  error: [Function: bound consoleCall],
+  dir: [Function: bound consoleCall],
+  time: [Function: bound consoleCall],
+  timeEnd: [Function: bound consoleCall],
+  trace: [Function: bound consoleCall],
+  assert: [Function: bound consoleCall],
+  clear: [Function: bound consoleCall],
+  count: [Function: bound consoleCall],
+  countReset: [Function: bound countReset],
+  Console: [Function: Console],
+  debug: [Function: debug],
+  dirxml: [Function: dirxml],
+  table: [Function: table],
+  group: [Function: group],
+  groupCollapsed: [Function: groupCollapsed],
+  groupEnd: [Function: groupEnd],
+  markTimeline: [Function: markTimeline],
+  profile: [Function: profile],
+  profileEnd: [Function: profileEnd],
+  timeline: [Function: timeline],
+  timelineEnd: [Function: timelineEnd],
+  timeStamp: [Function: timeStamp],
+  [Symbol(counts)]: Map {} }
+log
+info
+{ name: 'zhubangbang' }
+{"name":"zhubangbang"}
+% { name: 'zhubangbang' }
+2
+true
+while循环统计时间: 37.704ms

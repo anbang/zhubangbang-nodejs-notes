@@ -1,12 +1,24 @@
 /**
    全局对象
     global的根本作用是全局变量的宿主
-     global的属性都可以直接被全局使用。
+    global的属性都可以直接被全局使用。
  **/
 
 
-/*全局变量的声明方法，1，global的属性；2，不加var直接写的变量*/
-/*引用方法，可以用console.log(global.a)；2，console.log(a)*/
+/*
+
+全局变量的声明方法，
+    1，global的属性；
+    2，不加var直接写的变量
+
+    */
+
+/*引用方法，可以用
+
+    console.log(global.a);
+    console.log(a)
+
+    */
 global.a = 1;
 //console.log(global);//window
 b = 3;
@@ -19,7 +31,7 @@ console.log(global===global.global);//true,global上会有一个global；
 
 
 //with 方法的使用,下面就可以输出obj的name和age；
-var obj={name:"objname",age:8}
+var obj={name:"objname",age:8};
 with (obj){
     console.log(name);
     console.log(age);
