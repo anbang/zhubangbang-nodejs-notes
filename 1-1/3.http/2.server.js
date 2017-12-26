@@ -17,4 +17,4 @@ server.on('request',function(request,response){
 server.listen(8080);//在对应的端口上实现监听
 
 
-fs.readFileSync('index2.html','UTF-8') 按照UTF-8读取index2.html
+fs.readFileSync('index2.html','UTF-8') //按照UTF-8读取index2.html
