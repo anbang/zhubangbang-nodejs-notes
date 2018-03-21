@@ -86,3 +86,5 @@ console还有很多其它的api，可以输出了解下；
               timeStamp: [Function: timeStamp],
               [Symbol(counts)]: Map {} 
             }
+
+### process
