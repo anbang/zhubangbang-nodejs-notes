@@ -1,0 +1,23 @@
+{
+  "name": "zhubangbang-nodejs-notes",
+  "version": "1.0.0",
+  "description": "学习nodejs的api和js差不多；js里先看window上的属性；在nodejs中先从global入手；",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhubangbang/zhubangbang-nodejs-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhubangbang/zhubangbang-nodejs-notes/issues"
+  },
+  "homepage": "https://github.com/zhubangbang/zhubangbang-nodejs-notes#readme",
+  "dependencies": {
+    "google-translate": "^2.2.0"
+  }
+}
