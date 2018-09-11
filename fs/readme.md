@@ -1,56 +1,192 @@
-### fs文件系统；
+fs文件系统；
 
-**引入说明**：通过 require('fs') 使用该模块。 **所有的方法都有异步和同步的形式**；异步方法的最后一个参数都是一个回调函数。 传给回调函数的参数取决于具体方法，但回调函数的第一个参数都会保留给异常。 如果操作成功完成，则第一个参数会是 null 或 undefined。
+**引入说明**：通过 `require('fs')` 使用该模块。 
+
+**所有的方法都有异步和同步的形式**；异步方法的最后一个参数都是一个回调函数。 传给回调函数的参数取决于具体方法，但回调函数的第一个参数都会保留给异常。 
+
+如果操作成功完成，则第一个参数会是 null 或 undefined。
 
 首先查看下fs的属性和方法；
 
-JS中的代码（fs.js内）
+JS中的代码（1.fs.hello.js内）
+
+```javascript
+const fs = require ('fs');
+for (const key in fs){
+    if(key.indexOf('Sync')<0){
+        console.log(key);
+    }
+}
+```
+
+node执行后,返回结果如下（为方便阅读，有部分修改）：
+
+```
+//类
+Stats
+ReadStream
+WriteStream
+FileReadStream
+FileWriteStream
+
+//方法 - 返回值继承类
+
+stat
+fstat
+lstat
+watchFile
+
+//方法，有些是继承上面的类
+
+constants
+access
+exists
+readFile
+close
+open
+read
+write
+rename
+truncate
+ftruncate
+rmdir
+fdatasync
+fsync
+mkdir
+readdir
 
 
-    let fs=require('fs');
-    console.log(fs);
+readlink
+symlink
+link
+unlink
+fchmod
+chmod
+fchown
+chown
+_toUnixTimestamp
+utimes
+futimes
+writeFile
+appendFile
+watch
 
-node执行后
+unwatchFile
+realpath
+mkdtemp
+copyFile
+createReadStream
+createWriteStream
+```
 
-    $ node fs/fs.js
+# 类
 
-返回结果如下（为方便阅读，有部分修改）：
+很多方法的返回值都是属于该类型
 
-##### 为了方便于阅读，我把文件分为下面的
+### Stats
 
+该实力返回的对象提供了一个文件的信息,以下的方法以及同步方法均返回该类型
 
-常量部分：
+##### fs.stat(path[, options], callback) 统计
 
-	constants: {
-        O_RDONLY:   0,
-        O_WRONLY:   1,
-        O_RDWR:     2,
-        S_IFMT:     61440,
-        S_IFREG:    32768,
-        S_IFDIR:    16384,
-        S_IFCHR:    8192,
-        S_IFLNK:    40960,
-        O_CREAT:    256,
-        O_EXCL:     1024,
-        O_TRUNC:    512,
-        O_APPEND:   8,
-        F_OK:   0,
-        R_OK:   4,
-        W_OK:   2,
-        X_OK:   1,
-        UV_FS_COPYFILE_EXCL:    1,
-        COPYFILE_EXCL:  1
-    },
-    Stats:  "Function",
-    F_OK:   0,			//可见		find
-    R_OK:   4,			//可读		read
-    W_OK:   2,			//可写		write
-    X_OK:   1,			//可执行		对 Windows 系统没作用（相当于 fs.constants.F_OK）
+形参如下
 
+- path <string> | <Buffer> | <URL>
+- options <Object>
+    - bigint <boolean> Whether the numeric values in the returned fs.Stats object should be bigint. Default: false.
+- callback <Function>
+    - err <Error>
+    - stats <fs.Stats>
 
-方法部分：
+返回的stats有状态和方法
 
-** 目录的操作 **
+状态是
+```
+{
+      dev: 1918120247,              //包含文件的设备的数值型标识
+      mode: 33206,          //表示文件类型与模式的位域
+      nlink: 1,             //文件的硬链接数量
+      uid: 0,               //文件拥有者的数值型用户标识
+      gid: 0,               //拥有文件的群组的数值型群组标识
+      rdev: 0,              //如果文件是一个特殊文件，则返回数值型的设备标识
+      blksize: undefined,   //文件系统用于 I/O 操作的块大小
+      ino: 281474976741650, //文件系统特定的文件索引节点数值
+      size: 1529,           //文件的字节大小
+      blocks: undefined,    //分配给文件的块的数量
+      atimeMs: 1536661189009.976,           //表示文件最后一次被访问的时间戳
+      mtimeMs: 1536661189009.976,           //表示文件最后一次被修改的时间戳
+      ctimeMs: 1536661189009.976,           //表示文件最后一次被改变的时间戳
+      birthtimeMs: 1536661189009.976,       //表示文件的创建时间戳
+      atime: 2018-09-11T10:19:49.010Z,      //表示文件最后一次被访问的时间
+      mtime: 2018-09-11T10:19:49.010Z,      //表示文件最后一次被修改的时间
+      ctime: 2018-09-11T10:19:49.010Z,      //表示文件最后一次被改变的时间
+      birthtime: 2018-09-11T10:19:49.010Z   //表示文件的创建时间
+}
+```
+
+方法是
+```
+     _checkModeProperty: [母鸡啊],
+      isDirectory: [是否目录],
+      isFile: [是否文件],
+      isBlockDevice: [母鸡啊],
+      isCharacterDevice: [母鸡啊],
+      isSymbolicLink: [母鸡啊],
+      isFIFO: [母鸡啊],
+      isSocket: [是否socket文件]
+```
+
+##### fs.lstat()
+
+形参和 `stat` 一样
+
+网上有说 `lstat()` 与 `stat()` 基本相同, 区别在于，如果 path 是链接，读取的是链接本身，而不是它所链接到的文件；但是为测试好像并不是，可能是姿势不对；
+
+##### fs.fstat()
+
+- fd <integer> 这个值不同
+- options <Object>
+    - bigint <boolean>
+- callback <Function>
+    - err <Error>
+    - stats <fs.Stats>
+
+和status一样的；只是用法不同，可以在`fs.open的回调函数中使用` ,参见 `fs/Stats_fs.fstat.js`
+
+##### fs.watchFile(filename[, options], listener)
+
+- filename <string> | <Buffer> | <URL>
+- options <Object>
+    - persistent <boolean> Default: true
+    - interval <integer> Default: 5007
+- listener <Function>
+    - current <fs.Stats>
+    - previous <fs.Stats>
+
+监视 filename 的变化。 回调 listener 会在每次访问文件时被调用。
+
+options 参数可被省略。 如果提供的话，它应该是一个对象。 options 对象可能包含一个名为 persistent 的布尔值，表明当文件正在被监视时，进程是否应该继续运行。 options 对象可以指定一个 interval 属性，表示目标应该每隔多少毫秒被轮询。 默认值为 { persistent: true, interval: 5007 }。
+
+listener 有两个参数，当前的状态对象和以前的状态对象：
+
+```javascript
+fs.watchFile('message.text', (curr, prev) => {
+  console.log(`the current mtime is: ${curr.mtime}`);
+  console.log(`the previous mtime was: ${prev.mtime}`);
+});
+```
+如果你想在文件被修改而不只是访问时得到通知，则需要比较 curr.mtime 和 prev.mtime。 ,参见 `fs/Stats_fs.fstat.js`
+
+注意：fs.watch() 比 fs.watchFile() 和 fs.unwatchFile() 更高效。 可能的话，应该使用 fs.watch() 而不是 fs.watchFile() 和 fs.unwatchFile()。
+
+### ReadStream
+### WriteStream
+### FileReadStream
+### FileWriteStream
+
+# 方法
+
+#### 目录的操作
 
 	//创建目录
     mkdir(path, [mode], callback),
@@ -72,7 +208,7 @@ node执行后
     fs.access(path[, mode], callback),					//如果要检查一个文件是否存在且不操作它使用本方法，
 														 配合 F_OK / R_OK ...
 
-** 修改 **
+#### 修改 
 
 
 	//复制
@@ -93,7 +229,7 @@ node执行后
 
 
 
-**查找**
+#### 查找
 
 	//查看文件与目录的是否存在
 
@@ -129,7 +265,7 @@ node执行后
 
 
 
-** 监视 **
+####  监视 
 	//监视文件
     watchFile(filename[, options], listener),//无Sync
 
@@ -139,7 +275,7 @@ node执行后
 	//监视文件或目录
     watch(filename[, options][, listener]),//无Sync
 
-** 流操作**
+####  流操作
 
     ReadStream:         "",//流读取	无Sync
     createReadStream(path[, options]),//创建读取流	无Sync
@@ -167,14 +303,7 @@ node执行后
 
 
 
-# 常量部分 fs.constants；
-
-** 常用于access(path[, mode], callback) **
-
-- F_OK	该标志表明文件对于调用进程是可见的。【可见】
-- R_OK	该标志表明文件可被调用进程读取。【可读】
-- W_OK	该标志表明文件可被调用进程写入。【可写】
-- X_OK	该标志表明文件可被调用进程执行。【可执行】
+# 
 
 **  x **
 
