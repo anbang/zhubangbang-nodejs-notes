@@ -24,15 +24,15 @@ fs.stat("./dir.js",function(err,stats){
     状态有
     {
       dev: 1918120247,              //包含文件的设备的数值型标识
-      mode: 33206,          //表示文件类型与模式的位域
-      nlink: 1,             //文件的硬链接数量
-      uid: 0,               //文件拥有者的数值型用户标识
-      gid: 0,               //拥有文件的群组的数值型群组标识
-      rdev: 0,              //如果文件是一个特殊文件，则返回数值型的设备标识
-      blksize: undefined,   //文件系统用于 I/O 操作的块大小
-      ino: 281474976741650, //文件系统特定的文件索引节点数值
-      size: 1529,           //文件的字节大小
-      blocks: undefined,    //分配给文件的块的数量
+      mode: 33206,                  //表示文件类型与模式的位域
+      nlink: 1,                     //文件的硬链接数量
+      uid: 0,                       //文件拥有者的数值型用户标识
+      gid: 0,                       //拥有文件的群组的数值型群组标识
+      rdev: 0,                      //如果文件是一个特殊文件，则返回数值型的设备标识
+      blksize: undefined,           //文件系统用于 I/O 操作的块大小
+      ino: 281474976741650,         //文件系统特定的文件索引节点数值
+      size: 1529,                   //文件的字节大小
+      blocks: undefined,            //分配给文件的块的数量
       atimeMs: 1536661189009.976,           //表示文件最后一次被访问的时间戳
       mtimeMs: 1536661189009.976,           //表示文件最后一次被修改的时间戳
       ctimeMs: 1536661189009.976,           //表示文件最后一次被改变的时间戳
@@ -51,13 +51,13 @@ fs.stat("./dir.js",function(err,stats){
     /*
     方法有
       _checkModeProperty: [母鸡啊],
-      isDirectory: [是否目录],
-      isFile: [是否文件],
-      isBlockDevice: [母鸡啊],
-      isCharacterDevice: [母鸡啊],
-      isSymbolicLink: [母鸡啊],
-      isFIFO: [母鸡啊],
-      isSocket: [是否socket文件]
+      isDirectory: [是否文件系统目录],
+      isFile: [是否普通文件],
+      isBlockDevice: [是否块设备],
+      isCharacterDevice: [是否字符设备],
+      isSymbolicLink: [是否符号链接],
+      isFIFO: [是否先进先出的管道],
+      isSocket: [是否socket]
     * */
     console.log(stats.__proto__);//有的方法
     console.log(stats.isFile());//判断是否是目录；是返回true；不是返回false；

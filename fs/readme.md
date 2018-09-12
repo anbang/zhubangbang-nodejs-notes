@@ -31,10 +31,17 @@ FileWriteStream
 
 //方法 - 返回值继承类
 
+//Stats 类
 stat
 fstat
 lstat
 watchFile
+
+//ReadStream 类
+createReadStream //方法只有同步的
+
+//WriteStream 类
+createWriteStream //方法只有同步的
 
 //方法，有些是继承上面的类
 
@@ -75,19 +82,19 @@ unwatchFile
 realpath
 mkdtemp
 copyFile
-createReadStream
-createWriteStream
+
+
 ```
 
 # 类
 
 很多方法的返回值都是属于该类型
 
-### Stats
+## Stats
 
 该实力返回的对象提供了一个文件的信息,以下的方法以及同步方法均返回该类型
 
-##### fs.stat(path[, options], callback) 统计
+### fs.stat(path[, options], callback) 统计
 
 形参如下
 
@@ -98,21 +105,22 @@ createWriteStream
     - err <Error>
     - stats <fs.Stats>
 
-返回的stats有状态和方法
+返回的`stats`有状态和方法
 
-状态是
+状态是 ` console.log(stats);//返回状态`
+
 ```
 {
       dev: 1918120247,              //包含文件的设备的数值型标识
-      mode: 33206,          //表示文件类型与模式的位域
-      nlink: 1,             //文件的硬链接数量
-      uid: 0,               //文件拥有者的数值型用户标识
-      gid: 0,               //拥有文件的群组的数值型群组标识
-      rdev: 0,              //如果文件是一个特殊文件，则返回数值型的设备标识
-      blksize: undefined,   //文件系统用于 I/O 操作的块大小
-      ino: 281474976741650, //文件系统特定的文件索引节点数值
-      size: 1529,           //文件的字节大小
-      blocks: undefined,    //分配给文件的块的数量
+      mode: 33206,                  //表示文件类型与模式的位域
+      nlink: 1,                     //文件的硬链接数量
+      uid: 0,                       //文件拥有者的数值型用户标识
+      gid: 0,                       //拥有文件的群组的数值型群组标识
+      rdev: 0,                      //如果文件是一个特殊文件，则返回数值型的设备标识
+      blksize: undefined,           //文件系统用于 I/O 操作的块大小
+      ino: 281474976741650,         //文件系统特定的文件索引节点数值
+      size: 1529,                   //文件的字节大小
+      blocks: undefined,            //分配给文件的块的数量
       atimeMs: 1536661189009.976,           //表示文件最后一次被访问的时间戳
       mtimeMs: 1536661189009.976,           //表示文件最后一次被修改的时间戳
       ctimeMs: 1536661189009.976,           //表示文件最后一次被改变的时间戳
@@ -124,25 +132,26 @@ createWriteStream
 }
 ```
 
-方法是
+方法是 `console.log(stats.__proto__);//有的方法`
+
 ```
-     _checkModeProperty: [母鸡啊],
-      isDirectory: [是否目录],
-      isFile: [是否文件],
-      isBlockDevice: [母鸡啊],
-      isCharacterDevice: [母鸡啊],
-      isSymbolicLink: [母鸡啊],
-      isFIFO: [母鸡啊],
-      isSocket: [是否socket文件]
+_checkModeProperty: [母鸡啊],
+isDirectory: [是否文件系统目录],
+isFile: [是否普通文件],
+isBlockDevice: [是否块设备],
+isCharacterDevice: [是否字符设备],
+isSymbolicLink: [是否符号链接],
+isFIFO: [是否先进先出的管道],
+isSocket: [是否socket]
 ```
 
-##### fs.lstat()
+### fs.lstat()
 
 形参和 `stat` 一样
 
 网上有说 `lstat()` 与 `stat()` 基本相同, 区别在于，如果 path 是链接，读取的是链接本身，而不是它所链接到的文件；但是为测试好像并不是，可能是姿势不对；
 
-##### fs.fstat()
+### fs.fstat()
 
 - fd <integer> 这个值不同
 - options <Object>
@@ -151,10 +160,9 @@ createWriteStream
     - err <Error>
     - stats <fs.Stats>
 
-和status一样的；只是用法不同，可以在`fs.open的回调函数中使用` ,参见 `fs/Stats_fs.fstat.js`
+和status一样的；只是用法不同，可以在`fs.open的回调函数中使用` ,参见 `fs/Stats_fs.fstat.js`文件
 
-##### fs.watchFile(filename[, options], listener)
-
+### fs.watchFile(filename[, options], listener)
 - filename <string> | <Buffer> | <URL>
 - options <Object>
     - persistent <boolean> Default: true
@@ -162,6 +170,7 @@ createWriteStream
 - listener <Function>
     - current <fs.Stats>
     - previous <fs.Stats>
+
 
 监视 filename 的变化。 回调 listener 会在每次访问文件时被调用。
 
@@ -179,10 +188,15 @@ fs.watchFile('message.text', (curr, prev) => {
 
 注意：fs.watch() 比 fs.watchFile() 和 fs.unwatchFile() 更高效。 可能的话，应该使用 fs.watch() 而不是 fs.watchFile() 和 fs.unwatchFile()。
 
-### ReadStream
-### WriteStream
-### FileReadStream
-### FileWriteStream
+## ReadStream
+
+成功调用 fs.createReadStream() 会返回一个新的 fs.ReadStream 对象,该对象都是可读流。
+
+
+## WriteStream
+
+## FileReadStream
+## FileWriteStream
 
 # 方法
 
