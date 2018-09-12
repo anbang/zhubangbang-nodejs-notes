@@ -1,0 +1,1 @@
+console.log(module.require("./4.module.key"));
