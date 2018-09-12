@@ -230,7 +230,7 @@ main的值是这种方式的唯一入口
 
 例如 `require('example-module/path/to/file')` 会把 `path/to/file` 解析成相对于 包`example-module` 的位置。 后缀路径同样遵循模块的解析语法;
 
-### 从全局目录加载
+## 三、从全局目录加载
 
 如果 `NODE_PATH` 环境变量被设为一个以冒号分割的绝对路径列表，则当在其他地方找不到模块时 Node.js 会搜索这些路径。
 
