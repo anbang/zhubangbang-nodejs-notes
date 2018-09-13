@@ -4,6 +4,12 @@ Module,NodeJs中把每个文件当做一个模块；
 
 # 函数包装器
 
+代码参见`1-module/0.module.js` 
+
+写一个语法错误的`console.log(+);`，会看到下面这个包装器
+
+所以推出Module 是在下面这个包装函数里面的
+
 ```javascript
 (function(exports, require, module, __filename, __dirname) {
 // 模块的代码实际上在这里
