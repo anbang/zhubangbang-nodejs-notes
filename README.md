@@ -32,9 +32,9 @@
 
 NodeJs是一个自带模块化系统，基于事件驱动和异步I/O的服务端JS环境,采用错误优先的回调函数,用于同时返回错误和数据；
 
-- Module - 模块
+- Module - 模块(`/1-module/README.md`)
     - NodeJs 自带模块化系统，每个文件都被视为独立的模块
-- Error - 错误 
+- Error - 错误(`/1-error/README.md`)
     - NodeJs采用错误优先的回调函数,用于同时返回错误和数据
 - Event 
     - NodeJs是一个基于事件驱动和异步I/O的服务端JS环境
